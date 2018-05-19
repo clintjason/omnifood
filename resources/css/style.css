@@ -27,13 +27,18 @@ html {
 }
 
 section {
-    padding: 80px 0;
+    /*padding: 80px 0px;*/
+    padding-top: 80px;
+}
+
+.box {
+    padding: 1%;
 }
 
 /*---HEADINGS------*/
 h1,
-h2 {
-    
+h2,
+h3{
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -64,6 +69,11 @@ h2:after {
     margin-top: 20px;
 }
 
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
 /*----PARAGRAPHS----*/
 .long-copy {
     line-height: 145%;
@@ -71,9 +81,21 @@ h2:after {
     margin-left: 18%;
 }
 
-.box {
-    padding: 1%;
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+    text-align: justify;
 }
+
+/*---- ICONS -------*/
+.icon-big {
+    color: #e67e22;
+    font-size: 350%;
+    display: block;
+    margin-bottom: 20px;
+    padding-left: 30%;
+}
+
 /*-----BUTTONS------*/
 .btn:link,
 .btn:visited {
@@ -165,4 +187,30 @@ header {
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
     padding-bottom: 8px;
+}
+
+/*-------------*/
+/*--- MEALS ---*/
+/*-------------*/
+
+.meals-showcase {
+    display: block;
+    list-style: none;
+    width: 100%;
+}
+
+.section-meals ul li {
+    display: block;
+    width: 25%;
+    float: left;
+}
+.meal-photo {
+    width: 100%; /* meaning that it has the width of its parent li */
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.meal-photo img {
+    width: 100%; /* ensure that the width of the image is exactly as wide as its container */
+    height: auto;
 }
