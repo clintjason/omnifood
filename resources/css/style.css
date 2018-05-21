@@ -102,6 +102,22 @@ h3 {
     display: block;
     margin-bottom: 20px;
     padding-left: 30%;
+    
+}
+
+/*--- Links ---*/
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid #e67e22;
+    padding-bottom: 1px;#e67e22;
+    transition: border-bottom 0.5s, color 0.2s;    
+}
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
 }
 
 /*-----BUTTONS------*/
@@ -189,6 +205,7 @@ header {
     color: #fff;
     font-size: 90%;
     text-transform: uppercase;
+    border: 0px;
 }
 
 .main-nav li a:hover,
@@ -278,6 +295,10 @@ header {
     float: left;
     margin-right: 25px;
 }
+.btn-app:link,
+.btn-app:visited {
+    border: 0;
+}
 .btn-app img {
     height: 50px;
     width: auto;
@@ -297,5 +318,34 @@ header {
     margin-bottom: 5px;
 }
 .icon-small {
+    color: #e67e22;
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    font-size: 120%;
+    margin-right: 10px;
+    
+    /* secret to align icon and text */
+    line-height: 120%;
+}
+
+/*------------------*/
+/*-- TESTIMONIALS --*/
+/*------------------*/
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(/resources/img/back-customers.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+.customer-image {
+    border-radius: 50%;
+    display: inline-block;
+    height: 70px;
+    margin-top: 40px;
+    vertical-align: middle;
+}
+.quote {
     
 }
