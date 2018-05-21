@@ -170,6 +170,7 @@ header {
     background-size: cover; /* to have the image not zoomed in again but rather have a view on the entire image */
     background-position: center;
     height: 100vh; /* height is 100% of the viewport height */
+    background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -335,17 +336,37 @@ header {
 
 .section-testimonials {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(/resources/img/back-customers.jpg);
-    background-size: cover;
-    background-position: center;
+    background-size: cover; /* to make the image cover the width of my screen */
+    background-attachment: fixed;
     color: #fff;
 }
-.customer-image {
-    border-radius: 50%;
-    display: inline-block;
-    height: 70px;
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
     margin-top: 40px;
-    vertical-align: middle;
 }
-.quote {
-    
+
+cite {
+    font-size: 90%;
+    display: block;
+    margin-top: 25px;
+}
+
+cite img {
+    border-radius: 50%;
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+blockquote:before {
+    content:"\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    left: -5px;
+    top: -5px;
 }
