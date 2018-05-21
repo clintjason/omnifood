@@ -27,12 +27,20 @@ html {
 }
 
 section {
-    /*padding: 80px 0px;*/
-    padding-top: 80px;
+    padding: 80px 0px;
 }
 
 .box {
     padding: 1%;
+}
+
+.clearfix { zoom : 1;}
+.clearfix:after {
+    content: '.';
+    clear: both; /* clear floats*/
+    display: block;
+    height: 0;
+    visibility: hidden;
 }
 
 /*---HEADINGS------*/
@@ -188,11 +196,19 @@ header {
     border-bottom: 2px solid #e67e22;
     padding-bottom: 8px;
 }
+/*-------------*/
+/*-- Features --*/
+/*-------------*/
+.section-feautures .long-copy {
+    margin-bottom: 15px;
+}
 
 /*-------------*/
 /*--- MEALS ---*/
 /*-------------*/
-
+.section-meals {
+    padding: 0px;
+}
 .meals-showcase {
     display: block;
     list-style: none;
@@ -208,9 +224,78 @@ header {
     width: 100%; /* meaning that it has the width of its parent li */
     margin-bottom: 0px;
     margin-top: 0px;
+    overflow: hidden;
+    background-color: #000;
 }
 
 .meal-photo img {
     width: 100%; /* ensure that the width of the image is exactly as wide as its container */
     height: auto;
+    transform: scale(1.15);
+    opacity: 0.7;
+    transition: transform 0.5s, opacity 0.5s;
+}
+.meal-photo img:hover {
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+/*--------------------*/
+/*-- How it works ----*/
+/*--------------------*/
+.section-steps {
+    background-color: #f5f5f5;
+}
+
+.steps-box:first-child {
+    text-align: right; /**text-align works for all inline-block elements like img. So img will be aligned to the right of this box*/
+    padding-right: 3%;
+     margin-top: 30px;
+}
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+}
+.app-screen {
+    width: 40%;
+}
+.works-step {
+    margin-bottom: 50px;
+}
+.works-step:last-of-type {
+    margin-bottom: 80px;
+}
+.works-step div {
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 50px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 150%;
+    float: left;
+    margin-right: 25px;
+}
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+/*---------------*/
+/*---- Cities ---*/
+/*---------------*/
+
+.box img {
+    height: 150px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.city-feature {
+    margin-bottom: 5px;
+}
+.icon-small {
+    
 }
