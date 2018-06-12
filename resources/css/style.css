@@ -86,7 +86,7 @@ h3 {
 .long-copy {
     line-height: 145%;
     width: 66%;
-    margin-left: 18%;
+    margin-left: 17%;
 }
 
 .box p {
@@ -270,19 +270,24 @@ header {
     padding-right: 3%;
      margin-top: 30px;
 }
+
 .steps-box:last-child {
     padding-left: 3%;
     margin-top: 70px;
 }
+
 .app-screen {
     width: 40%;
 }
+
 .works-step {
     margin-bottom: 50px;
 }
+
 .works-step:last-of-type {
     margin-bottom: 80px;
 }
+
 .works-step div {
     color: #e67e22;
     border: 2px solid #e67e22;
@@ -335,7 +340,7 @@ header {
 /*------------------*/
 
 .section-testimonials {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(/resources/img/back-customers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/back-customers.jpg);
     background-size: cover; /* to make the image cover the width of my screen */
     background-attachment: fixed;
     color: #fff;
