@@ -56,21 +56,67 @@
     .plan-price {
         font-size: 250%;
     }
-
+    
+    /*---- contact form ----*/
+    .contact-form { width: 80%; }
+    
 }
 
 /* Css Decorator for screen <= 767px i.e small - normal size devices
 or screens smaller than the ipad */
-/* Small phones to Small Tablettes: 480px to 767px */
+/* Small phones to Small Tablettes: 481px to 767px */
 @media only screen and (max-width:767px) {
+    html {
+       font-size: 16px;
+    }
+    section {
+        padding: 30px 0;
+    }
+    .row { padding: 0 4%; }
+    .col { 
+        width: 100%;
+        margin: 2% 0 2% 0%;
+    }
     
+    /* hide main nav */
+    .main-nav { display: none; }
+    h1 { font-size: 180%; }
+    h2 { font-size: 150%; }
+    .long-copy {
+        width: 100%;
+        margin-left: 0%;
+    }
+   .section-features h3 {
+        padding-left: 25%;
+    }
+    .icon-big { padding-left: 40%; margin-bottom: 10px;}
+    .steps-box:first-child {
+        text-align: center;
+        margin-top: 0px;
+    }
+    
+    .works-step:last-of-type {
+        margin-bottom: 50px;
+    }
+    .box img {
+        height: 150px;
+        width: 80%;
+    }
+    .works-step div {
+        height: 40px;
+        width: 50px;
+        font-size: 125%;
+        margin-right: 10px;
+    }
+    .hero-text-box { padding: 0 2%; }
 }
 
 /* Css Decorator for screens <= 480px i.e Small Screen Devices 
 or devices smaller than the iphone 5s*/
 /* small phones from 0 to 480px */
 @media only screen and (max-width:480px) {
-    
+    .contact-form { width: 100%; }
+     section { padding: 30px 0; }
 }
 
 /*
