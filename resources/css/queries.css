@@ -1,0 +1,160 @@
+
+/* Big device screens like tablettes and PCs from 1024px - 1200px */
+@media only screen and (max-width:1200px) {
+    /* HEADER */
+    .hero-text-box {
+        width: 100%;
+        left: 55%;
+        }
+    .row {
+        padding: 0 3%;
+    }
+    .topnav #myLinks {
+        display: flex;
+    }
+}
+
+/* Css Decorator for screen <= 1023px i.e small tablettes size devices to big tablettes devices */
+/* small tablettes to big tablettes and even some PCs
+    from 768px to 1023px */
+@media only screen and (max-width:1023px) {
+    html {
+       font-size: 18px;
+    }
+    section {
+        padding: 60px 0;
+    }
+    /*----PARAGRAPHS----*/
+    .long-copy {
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    .steps-box:first-child {
+        padding-right: 1%;
+         margin-top: 10px;
+    }
+
+    .steps-box:last-child {
+        padding-left: 2%;
+        margin-top: 40px;
+    }
+    
+    .app-screen { width: 50%; }
+    .works-step { margin-bottom: 30px; }
+    .works-step:last-of-type { margin-bottom: 50px; }
+    
+    .icon-small {
+        width: 15px;
+        margin-right: 3px;
+    }
+    
+    .city-feature { font-size: 90%; }
+    
+    .plan-box {
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+    .plan-price {
+        font-size: 250%;
+    }
+    
+    /*---- contact form ----*/
+    .contact-form { width: 80%; }
+    
+}
+
+/* Css Decorator for screen <= 767px i.e small - normal size devices
+or screens smaller than the ipad */
+/* Small phones to Small Tablettes: 481px to 767px */
+@media only screen and (max-width:767px) {
+    html {
+       font-size: 16px;
+    }
+    section {
+        padding: 30px 0;
+    }
+    .row { padding: 0 4%; }
+    .col { 
+        width: 100%;
+        /*margin: 2% 0 2% 0%;*/
+    }
+
+    .row.flex-box {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .col.city {
+        width: 75%;
+    }
+    
+    /* hide main nav */
+    h1 { font-size: 180%; }
+    h2 { font-size: 150%; }
+    .long-copy {
+        width: 100%;
+        margin-left: 0%;
+    }
+   .section-features h3 {
+        padding-left: 25%;
+    }
+    .icon-big { padding-left: 40%; margin-bottom: 10px;}
+    .steps-box:first-child {
+        text-align: center;
+        margin-top: 0px;
+    }
+    
+    .works-step:last-of-type {
+        margin-bottom: 50px;
+    }
+    .box img {
+        height: 150px;
+        width: 80%;
+    }
+    .works-step div {
+        height: 40px;
+        width: 50px;
+        font-size: 125%;
+        margin-right: 10px;
+    }
+    .hero-text-box { padding: 0 2%; }
+}
+
+/* Css Decorator for screens <= 480px i.e Small Screen Devices 
+or devices smaller than the iphone 5s*/
+/* small phones from 0 to 480px */
+@media only screen and (max-width:480px) {
+    .contact-form { width: 100%; }
+     section { padding: 30px 0; }
+}
+
+@media only screen and (max-width:1063px) {
+    .main-nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background: #e67e22;
+        width: 100%;
+        z-index: 5;
+        position: relative;
+        margin-top: 10px;
+    }
+    .topnav a.icon {
+        display: block;
+    }
+    .topnav #myLinks {
+        display: none;
+    }
+}
+
+
+
+/*
+The iphone 5S has a width of 480px
+ The IPad has a width of 768px, and other taplettes sizes ranges from  that size to 1023px
+
+*/
